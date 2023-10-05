@@ -5,5 +5,6 @@ gradio==3.38.0
 librosa==0.9.1
 numpy==1.23.5
 praat-parselmouth==0.4.3
-pyworld==0.3.4
+onnxruntime; sys_platform == 'darwin'
+onnxruntime-gpu; sys_platform != 'darwin'
 torchcrepe==0.0.20
